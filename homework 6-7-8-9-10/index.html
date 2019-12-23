@@ -6,15 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Второй макет</title>
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./fonts/mgopen.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Raleway:400,500,600,700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Raleway:400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stulesheet" href="./css/owl.carousel.min.css">
+    <link rel="stulesheet" href="./css/owl.theme.default.min.css">
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="script.js"></script>
 </head>
 <!-------------------------------------- BODY ------------------------------------------>
 
@@ -31,8 +30,8 @@
                     </div>
                 </div>
                 <div class="block_menu">
-                    <ul class="menu">
-                        <li><a href="#">HOME</a></li>
+                    <ul class="menu" id="menu">
+                        <li><a href="#first">HOME</a></li>
                         <li><a href="#">ABOUT US</a></li>
                         <li><a href="#">PORTFOLIO</a></li>
                         <li><a href="#">CLIENTS</a></li>
@@ -41,6 +40,11 @@
                         <li><a href="#">BLOG</a></li>
                         <li><a href="#">CONTACT</a></li>
                     </ul>
+                    <span class="burger" id="burger">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </span>
                 </div>
             </div>
         </header>
@@ -196,80 +200,96 @@
             </div>
         </section>
         <!-------------------------------------- CONTAINER4 ------------------------------------------>
-        <section class="container4">
+        <section class="container4" id="first">
             <h1>protfolio</h1>
-            <div class="link">
-                <a href="#">ALL</a>
-                <a href="#">ILLUSTRATION</a>
-                <a href="#">DIGITAL ART</a>
-                <a href="#">WEB DESIGN</a>
-            </div>
+                <ul class="clear">
+                    <li class="button all-i" data-filter="all" tabindex="-1">ALL</li>
+                    <li class="button site-i" data-filter="first" tabindex="-2">ILLUSTRATION</li>
+                    <li class="button foto-i" data-filter="photo" tabindex="-3">DIGITAL ART</li>
+                    <li class="button template-i" data-filter="other" tabindex="-4">WEB DESIGN</li>
+                </ul>
         </section>
         <!-------------------------------------- CONTAINER5 ------------------------------------------>
-        <section class="container5 wow zoomIn">
-            <div class="item1 wow slideInLeft" data-wow-duration="4s">
+        <section class="container5">
+            <div class="item1 item elem first other">
                 <img src="./images/Rectangle1.png">
             </div>
-            <div class="item2 wow slideInDown" data-wow-duration="2s">
+            <div class="item2 item elem photo">
                 <img src="./images/Rectangle2.png">
             </div>
-            <div class="item3 wow slideInDown" data-wow-duration="4s">
+            <div class="item3 item elem first other">
                 <img src="./images/Rectangle3.png">
             </div>
-            <div class="item4 wow slideInRight" data-wow-duration="5s">
+            <div class="item4 item elem first">
                 <img src="./images/Rectangle4.png">
             </div>
-            <div class="item5 wow slideInLeft" data-wow-duration="5s">
+            <div class="item5 item elem first other">
                 <img src="./images/Rectangle5.png">
             </div>
-            <div class="item6 wow slideInLeft" data-wow-duration="2s">
+            <div class="item6 item elem photo">
                 <img src="./images/Rectangle6.png">
             </div>
-            <div class="item7 wow slideInRight" data-wow-duration="3s">
+            <div class="item7 item elem photo">
                 <img src="./images/Rectangle7.png">
             </div>
-            <div class="item8 wow slideInRight" data-wow-duration="4s">
+            <div class="item8 item elem photo other">
                 <img src="./images/Rectangle8.png">
             </div>
             <div class="item9">
                 <img src="./images/Rectangle1.1.png">
+                <div class="caption">
                 <i id="plus2" class="fas fa-plus"></i>
                 <span>design name</span>
+                </div>
             </div>
             <div class="item10">
                 <img src="./images/Rectangle2.2.png">
-                <i id="plus2" class="fas fa-plus"></i>
-                <span>design name</span>
+                <div class="caption">
+                    <i id="plus2" class="fas fa-plus"></i>
+                    <span>design name</span>
+                    </div>
             </div>
             <div class="item11">
                 <img src="./images/Rectangle3.3.png">
-                <i id="plus2" class="fas fa-plus"></i>
-                <span>design name</span>
+                <div class="caption">
+                    <i id="plus2" class="fas fa-plus"></i>
+                    <span>design name</span>
+                    </div>
             </div>
             <div class="item12">
                 <img src="./images/Rectangle4.4.png">
-                <i id="plus2" class="fas fa-plus"></i>
-                <span>design name</span>
+                <div class="caption">
+                    <i id="plus2" class="fas fa-plus"></i>
+                    <span>design name</span>
+                    </div>
             </div>
             <div class="item13">
                 <img src="./images/Rectangle5.5.png">
-                <i id="plus2" class="fas fa-plus"></i>
-                <span>design name</span>
+                <div class="caption">
+                    <i id="plus2" class="fas fa-plus"></i>
+                    <span>design name</span>
+                    </div>
             </div>
             <div class="item14">
                 <img src="./images/Rectangle6.6.png">
-                <i id="plus2" class="fas fa-plus"></i>
-                <span>design name</span>
+                <div class="caption">
+                    <i id="plus2" class="fas fa-plus"></i>
+                    <span>design name</span>
+                    </div>
             </div>
             <div class="item15">
                 <img src="./images/Rectangle7.7.png">
-                <i id="plus2" class="fas fa-plus"></i>
-                <span>design name</span>
+                <div class="caption">
+                    <i id="plus2" class="fas fa-plus"></i>
+                    <span>design name</span>
+                    </div>
             </div>
             <div class="item16">
                 <img src="./images/Rectangle8.8.png">
-                <i id="plus2" class="fas fa-plus"></i>
-                <span>design name</span>
+                <div class="caption">
+                    <i id="plus2" class="fas fa-plus"></i>
+                    <span>design name</span>
+                    </div>
             </div>
             <div class="block_footer">
                 <input type="range" class="renge">
@@ -285,44 +305,50 @@
                     in urna. Dapibus egestas turpis.
                 </p>
                 <div class="content">
-                    <div class="item_left1">
-                        <span>UNLIMITED COLOR OPTIONS</span>
-                        <div class="hex">
-                            <i id="check" class="fas fa-check"></i>
+                    <div class="column_left">
+                        <div class="item">
+                            <span>UNLIMITED COLOR OPTIONS</span>
+                            <div class="hex">
+                                <i id="check" class="fas fa-check"></i>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <span>OUTSTANDING SUPPORT</span>
+                            <div class="hex">
+                                <i id="check" class="fas fa-check"></i>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <span>RETINA READY</span>
+                            <div class="hex">
+                                <i id="check" class="fas fa-check"></i>
+                            </div>
                         </div>
                     </div>
-                    <div class="item_left2">
-                        <span>OUTSTANDING SUPPORT</span>
-                        <div class="hex">
-                            <i id="check" class="fas fa-check"></i>
-                        </div>
-                    </div>
-                    <div class="item_left3">
-                        <span>RETINA READY</span>
-                        <div class="hex">
-                            <i id="check" class="fas fa-check"></i>
-                        </div>
-                    </div>
-                    <div class="item_center">
+                    <div class="photo">
                         <img src="./images/phone.png" alt="phone">
+                        <div class="link">
                         <a href="#" alt="free psd">FREE PSD</a>
-                    </div>
-                    <div class="item_right1">
-                        <span>UNLIMITED COLOR OPTIONS</span>
-                        <div class="hex">
-                            <i id="check" class="fas fa-check"></i>
                         </div>
                     </div>
-                    <div class="item_right2">
-                        <span>OUTSTANDING SUPPORT</span>
-                        <div class="hex">
-                            <i id="check" class="fas fa-check"></i>
+                    <div class="column_right">
+                        <div class="item">
+                            <span>UNLIMITED COLOR OPTIONS</span>
+                            <div class="hex">
+                                <i id="check" class="fas fa-check"></i>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item_right3">
-                        <span>RETINA READY</span>
-                        <div class="hex">
-                            <i id="check" class="fas fa-check"></i>
+                        <div class="item">
+                            <span>OUTSTANDING SUPPORT</span>
+                            <div class="hex">
+                                <i id="check" class="fas fa-check"></i>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <span>RETINA READY</span>
+                            <div class="hex">
+                                <i id="check" class="fas fa-check"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -337,51 +363,62 @@
                     dignissim luctus eu
                     in urna. Dapibus egestas turpis.
                 </p>
-                <div class="content">
-                    <div class="item1">
-                        <h2>HAPPY CLIENTS SAY</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit
-                            dignissim luctus eu in urna. Dapibus egestas turpis.
-                        </p>
-                    </div>
-                    <div class="item2">
-                        <div class="window">
-                            <img src="./images/Object1.png">
-                            <h6>graphicriver</h6>
+                <div class="container">
+                    <div class="row justify-content-center">
+
+                        <div class="text col-xl-6 col-lg-6 col-md-12  col-sm-12">
+                            <h2>HAPPY CLIENTS SAY</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit
+                                dignissim luctus eu in urna. Dapibus egestas turpis.
+                            </p>
                         </div>
-                    </div>
-                    <div class="item3">
-                        <div class="window">
-                            <img src="./images/Object2.png">
-                            <h6>videohive</h6>
+                        <div class="item col-xl-3 col-lg-3 col-md-6  col-sm-6 col-12">
+                            <div class="window">
+                                <div class="icon">
+                                    <img src="./images/Object1.png">
+                                    <h6>graphicriver</h6>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item4">
-                        <img src="./images/photo2.png">
-                        <span>AMR SROUR</span>
-                        <div class="leafing">
-                            <a href="#">
-                                <div class="but"></div>
-                            </a>
-                            <a href="#">
-                                <div class="but"></div>
-                            </a>
-                            <a href="#">
-                                <div class="but"></div>
-                            </a>
+                        <div class="item col-xl-3 col-lg-3 col-md-6  col-sm-6 col-12">
+                            <div class="window">
+                                <div class="icon">
+                                    <img src="./images/Object2.png">
+                                    <h6>videohive</h6>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item5">
-                        <div class="window">
-                            <img src="./images/Object3.png">
-                            <h6>photodune</h6>
+                        <div class="item4 col-xl-6 col-lg-6 col-md-12 col col-sm-12">
+                            <img src="./images/photo2.png">
+                            <span>AMR SROUR</span>
+                            <div class="leafing">
+                                <a href="#">
+                                    <div class="but"></div>
+                                </a>
+                                <a href="#">
+                                    <div class="but"></div>
+                                </a>
+                                <a href="#">
+                                    <div class="but"></div>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item6">
-                        <div class="window">
-                            <img src="./images/Object4.png">
-                            <h6>codecanyon</h6>
+                        <div class="item col-xl-3 col-lg-3 col-md-6  col-sm-6 col-12">
+                            <div class="window">
+                                <div class="icon">
+                                    <img src="./images/Object3.png">
+                                    <h6>photodune</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item col-xl-3 col-lg-3 col-md-6  col-sm-6 col-12">
+                            <div class="window">
+                                <div class="icon">
+                                    <img src="./images/Object4.png">
+                                    <h6>codecanyon</h6>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -630,7 +667,7 @@
             </div>
     </div>
     </section>
-    <section class="container11">
+    <section class="container11" id="first">
         <div class="center">
             <h2>Plans <span>Bestseller</span></h2>
             <p class="cont11_descr">Lorem ipsum dolor sit amet,
@@ -808,44 +845,86 @@
             dignissim<br> luctus eu in urna. Dapibus egestas turpis.
         </p>
         <div class="map">
-        <p class="speech wow pulse" data-wow-iteration="3">egypt, creativia<br>
-                          Address: cairo 123<br>
-                          Phone: +0201091915171
-                          Email: gfx3mr@gmail.com
-        </p>
-        <div class="user_data wow pulse" data-wow-iteration="3">
-            <h3>SEND MESSAGE</h3>
+            <p class="speech wow pulse" data-wow-iteration="3">egypt, creativia<br>
+                Address: cairo 123<br>
+                Phone: +0201091915171
+                Email: gfx3mr@gmail.com
+            </p>
+            <div class="user_data wow pulse" data-wow-iteration="3">
+                <h3>SEND MESSAGE</h3>
                 <input class="name" type="text" name="text" placeholder="Name" required />
                 <input class="email" type="email" name="email" placeholder="Email" required />
                 <input class="subject" type="text" name="text" placeholder="subject" required />
                 <textarea class="message" name="message" required></textarea>
                 <input class="submit" type="submit" value="SUBMIT" />
+            </div>
         </div>
-    </div>
     </section>
     <footer>
         <h2>Creativia</h2>
         <span>Design by Amr srous</span>
     </footer>
 
-
+    <div class="owl-carousel owl-theme">
+        <div class="item"><h4>1</h4></div>
+        <div class="item"><h4>2</h4></div>
+        <div class="item"><h4>3</h4></div>
+        <div class="item"><h4>4</h4></div>
+        <div class="item"><h4>5</h4></div>
+        <div class="item"><h4>6</h4></div>
+        <div class="item"><h4>7</h4></div>
+        <div class="item"><h4>8</h4></div>
+        <div class="item"><h4>9</h4></div>
+        <div class="item"><h4>10</h4></div>
+        <div class="item"><h4>11</h4></div>
+        <div class="item"><h4>12</h4></div>
+    </div>
 
 
     </div>
     <script src="./script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="./JS/wow.min.js"></script>
     <script>
         new WOW().init();
     </script>
+    <script src="./JS/owl.carousel.min.js"></script>
+    <script>
+            $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            dots: false,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:1
+                },
+                1000:{
+                    items:1
+                }
+            }
+        })
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+    $(".button").click(function(){
+        var value = $(this).attr("data-filter");
+        var elem = $(".elem");
+        if(value == "all"){
+        $(elem).show("500");
+        }
+        else{
+        $(elem).not("."+value).hide("500");
+        $(elem).filter("."+value).show("500");
+        }
+    });
+    })
+ </script>
 </body>
 
 </html>
